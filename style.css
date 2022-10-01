@@ -53,3 +53,16 @@ button{
     width: 500px;
     margin: auto;
 }
+
+.th3{
+    border: 1px solid black;
+    width: auto;
+    font-size: 25px;
+    background-color: #FFA042;
+}
+.ta1{
+        /* display: flex;
+    justify-content: center; */
+    width: 500px;
+    margin: auto;
+}
