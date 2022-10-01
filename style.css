@@ -36,6 +36,8 @@
 .d3{
     width: 500px;
     margin: auto;
+    /* display: flex;
+    justify-content: center; */
 }
 button{
     /* margin:auto; */
