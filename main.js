@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("button").click(function(){
+    $("#bt1").click(function(){
         var input1=$("#input1").val();
         var input2=$("#input2").val();
         var input3=$("#input3").val();
@@ -15,3 +15,4 @@ $(document).ready(function() {
         $("#result6").attr("value",Math.round((parseInt(input1)+parseInt(input2)+parseInt(input3))*exchange+parseInt(input4*60))+parseInt(input5))
     });
 });
+

@@ -39,16 +39,28 @@
     /* display: flex;
     justify-content: center; */
 }
-button{
+
+.dd1{
     /* margin:auto; */
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30% ;
+    /* margin-right: auto; */
     margin-top: 10px;
     margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size: 15px;
 }
+.dd2{
+    /* margin:auto; */
+    margin-left: auto ;
+    /* margin-right: auto; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size: 15px;
+}
+
 .d4{
     width: 500px;
     margin: auto;
