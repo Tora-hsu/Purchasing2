@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>代購總金額簡易計算機</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js" async defer></script>
+</head>
+
+<body>
+
+    <div class="d2">
+        <table class="tb1">
+            <thead>
+                <tr>
+                    <th class="t1">現行代購匯率</th>
+                    <th class="t1">目前單件國際運費平均金額</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="t2">0.255</td>
+                    <td class="t2">40 ~ 60 /件</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="d3">
+        <h3>總代購金額＝商品＋尾款 (國際運費+國內運費)</h3>
+        <h3 style="color: #46A3FF;">商品 = (商品定價+日本國內運費+可能產生的商店手續費) x 現行代購匯率</h3>
+        <h3 style="color: #46A3FF;">尾款 = 單件國際運費金額 x 本月到貨件數/本數 + 國內運費</h3>
+    </div>
+    <div class="d4">
+        <table>
+            <thead>
+                <tr>
+                    <th class="t3">項目</th>
+                    <th class="t3">金額</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="t4">商品含稅日幣金額:</td>
+                    <td class="t4"><input type="text" id="input1" style="font-size:20px" size="8"></td>
+                </tr>
+                <tr>
+                    <td class="t4">日本國內運費:</td>
+                    <td class="t4"><input type="text" id="input2" style="font-size:20px" size="8" value="0"></td>
+                    <td class="t5">※ 若無該費用請空白</td>
+                </tr>
+                <tr>
+                    <td class="t4">商店手續費:</td>
+                    <td class="t4"><input type="text" id="input3" style="font-size:20px" size="8" value="0"></td>
+                    <td class="t5">※ 若無該費用請空白</td>
+                </tr>
+                <tr>
+                    <td class="t4">委託商品總件數:</td>
+                    <td class="t4"><input type="text" id="input4" style="font-size:20px" size="8"></td>
+                </tr>
+                <tr>
+                    <td class="t4">國內運費(65/80/110):</td>
+                    <td class="t4"><input type="text" id="input5" style="font-size:20px" size="8"></td>
+                    <td class="t5">※ 委託件數0~5件65、5~15件80、15件以上110</td>
+                </tr>
+            </tbody>
+        </table>
+        <button>金額試算</button>
+
+    </div>
+    <div class="d4">
+        <table>
+            <thead>
+                <tr>
+                    <th class="th3" colspan="2">計算結果</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="t6">商品金額:</td>
+                    <td class="t6"><input type="text" id="result1" style="font-size:20px" size="8"></td>
+                </tr>
+                <tr>
+                    <td class="t6">國際運費:</td>
+                    <td class="t6"><input type="text" id="result2" style="font-size:20px" size="8">~<input type="text"
+                            id="result3" style="font-size:20px" size="8">元之間</td>
+                </tr>
+                <tr>
+                    <td class="t6">國內運費:</td>
+                    <td class="t6"><input type="text" id="result4" style="font-size:20px" size="8"></td>
+                </tr>
+                <tr>
+                    <td class="t6">總代購金額:</td>
+                    <td class="t6"><input type="text" id="result5" style="font-size:20px" size="8">~<input type="text"
+                            id="result6" style="font-size:20px" size="8">元之間</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="d3">
+        <h3>※ 因國際運費為浮動的，總代購金額計算結果僅能給出區間</h3>
+        <h3>※ 此為簡易計算，實際國際運費與國內運費可能會因商品大小、材質等特殊性有所變動</h3>
+    </div>
+</body>
+
+</html>
