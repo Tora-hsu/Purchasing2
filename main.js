@@ -5,7 +5,7 @@ $(document).ready(function() {
         var input3=$("#input3").val();
         var input4=$("#input4").val();
         var input5=$("#input5").val();
-        var exchange=0.26;
+        var exchange=0.255;
         $("#result1").attr("value",Math.round((parseInt(input1)+parseInt(input2)+parseInt(input3))*exchange));
         // $("#result1").attr("value",exchange);
         $("#result2").attr("value",input4*40);
